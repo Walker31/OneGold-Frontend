@@ -1,0 +1,64 @@
+.appbar {
+  box-shadow: none;
+  color: white;
+  background-color: white !important; /* Added !important */
+}
+
+.navbar-container {
+  color: white;
+  background-color: white !important; /* Added !important */
+}
+
+.nav-items {
+  background-color: white !important; /* Added !important */
+  display: none;
+  color: black !important;
+}
+
+.nav-button {
+  color: black !important;
+}
+
+.nav-button:hover {
+  color: #333 !important; /* Optional: Darker color on hover */
+}
+
+@media (min-width: 600px) {
+  .nav-items {
+    display: flex;
+    margin-right: 16px;
+  }
+}
+
+.logo-container {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.brand-logo {
+  width: 80px;
+  height: 80px;
+}
+
+.people-icon {
+  color: black;
+  font-size: 24px;
+  margin-right: 32px;
+}
+
+.search-icon {
+  margin-right: 32px;
+  color: black;
+  font-size: 24px;
+}
+
+
+.main-content {
+  padding: 16px;
+}
+
+@media (min-width: 600px) {
+  .main-content {
+    margin-top: 64px; /* For sm screens and above */
+  }
+}
