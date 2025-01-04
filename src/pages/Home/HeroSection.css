@@ -1,81 +1,286 @@
+/* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .hero-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #d8c183;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: none;
+  box-sizing: border-box;
 }
 
-  
-  .text-container {
-    padding: 40px;
-    max-width: 50%;
-  }
-  
-  .text-container h1 {
-    font-size: 2.5rem;
-    line-height: 1.2;
-    color: #000;
-  }
-  
-  .text-container h1 em {
-    font-style: italic;
-    color: #000;
-  }
-  
-  .text-container p {
-    font-size: 1rem;
-    margin: 20px 0;
-    color: #000;
-  }
-  
-  .cta-button {
-    display: inline-block;
-    background-color: #5c2c2c;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-  
-  .cta-button:hover {
-    background-color: #4b2323;
-  }
-  
-  .image-container {
-    flex: 1;
+/* Body */
+body {
+  font-family: 'Arial', sans-serif;
+}
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Hero Section */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d8c183;
+}
+
+.subtext {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #000; /* Ensure it's easily readable */
+  margin-top: 10px;
+}
+
+/* Text Container */
+.text-container {
+  padding: 40px;
+  max-width: 50%;
+}
+
+.text-container h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: #000;
+}
+
+.text-container h1 em {
+  font-style: italic;
+  color: #000;
+}
+
+.text-container p {
+  font-size: 1rem;
+  margin: 20px 0;
+  color: #000;
+}
+
+/* CTA Button */
+.cta-button {
+  display: inline-block;
+  background-color: #5c2c2c;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px 50px 50px 5px; /* Curves on one side */
+  font-size: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-button::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cta-button:hover {
+  background-color: #4b2323;
+}
+
+/* Image Container */
+.image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 5px;
+}
+
+/* Collections Section */
+.collections-section {
+  display: grid;
+  text-align: center;
+  padding: 20px;
+}
+
+.collection {
+  display: grid;
+  gap: 16px; /* Space between items */
+  grid-template-columns: repeat(3, 1fr)
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr); /* 2 items in a row */
   }
-  
-  .hero-image {
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-    border-radius: 5px;
-  }
-  
-  .collections-section {
-    text-align: center;
-    margin-top: 40px;
-    padding: 20px;
-    border-top: 1px solid #000;
-  }
-  
-  .collections-section h2 {
-    font-size: 2rem;
-    color: #000;
-  }
-  
+}
+
+.collections-section h2 {
+  font-size: 2rem;
+  color: #000;
+}
+
+.collections {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.collection-item {
+  text-align: center;
+}
+
+.collection-item img {
+  width: 150px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.collection-item p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.about-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.about-text h3 {
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #5c2c2c;
+  color: #fff;
+  padding: 20px 40px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-column h4 {
+  color: #DAC584;
+  margin-bottom: 10px;
+}
+
+.footer-column p {
+  margin: 0;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-column a:focus {
+  outline: none;
+}
+
+.footer-logo {
+  text-align: center;
+}
+
+.footer-item {
+  margin-left: 10px;
+}
+.footer-logo img {
+  height: 175px;
+  width: 175px;
+}
+
+.footer-logo h1 {
+  margin-bottom: 10px;
+}
+
+.email-link p{
+  color: gold;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  margin: 0;
+  border: none;
+  cursor: pointer; /* Add pointer cursor */
+}
+/* About Us Section */
+.about-us {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8e6c2; /* Beige-like background for the section */
+}
+
+.content-wrapper {
+  display: flex;
+  height: 400px;
+  max-width: 1400px;
+  align-items: center;
+  gap: 30px; /* Space between image and text */
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-image {
+  width: 300px; /* Adjust as needed */
+  height: 300px; /* Ensure the circle */
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* New class for About Us text container */
+.about-text-container {
+  flex: 2;
+  background-color: #f5d89a; /* Light brownish background */
+  padding: 30px;
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.about-text-container h1 {
+  font-size: 2.5rem;
+  color: #5c2c2c; /* Deep brown for text */
+  margin-bottom: 20px;
+}
+
+.about-text-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #3a2f2f; /* Slightly muted text color */
+  margin-bottom: 20px;
+}

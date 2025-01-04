@@ -1,16 +1,18 @@
 .appbar {
-  box-shadow: none;
-  color: white;
-  background-color: white !important; /* Added !important */
+  box-shadow: none !important;
+  color: black;
+  background-color: white !important; /* Flat white background */
+  border: 1px solid #e0e0e0; /* Slim light gray border */
 }
 
 .navbar-container {
+  box-shadow: none;
   color: white;
-  background-color: white !important; /* Added !important */
+  background-color: white !important;
 }
 
 .nav-items {
-  background-color: white !important; /* Added !important */
+  background-color: white !important;
   display: none;
   color: black !important;
 }
@@ -20,7 +22,7 @@
 }
 
 .nav-button:hover {
-  color: #333 !important; /* Optional: Darker color on hover */
+  color: #333 !important;
 }
 
 @media (min-width: 600px) {
@@ -50,15 +52,4 @@
   margin-right: 32px;
   color: black;
   font-size: 24px;
-}
-
-
-.main-content {
-  padding: 16px;
-}
-
-@media (min-width: 600px) {
-  .main-content {
-    margin-top: 64px; /* For sm screens and above */
-  }
 }
