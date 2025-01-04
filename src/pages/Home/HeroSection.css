@@ -205,8 +205,9 @@ body {
   margin-left: 10px;
 }
 .footer-logo img {
-  height: 175px;
-  width: 175px;
+  width: 140px;
+  height: 80px;
+  margin-bottom: 20px;
 }
 
 .footer-logo h1 {
