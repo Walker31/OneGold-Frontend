@@ -28,7 +28,7 @@ function Navbar() {
           {/* Logo in the Center */}
           <Box className="logo-container">
             <img
-              src="/Assets/logo.png"
+              src="./src/assets/logo.png"
               alt="Brand Logo"
               height={100}
               width={100}

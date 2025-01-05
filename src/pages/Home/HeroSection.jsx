@@ -31,7 +31,7 @@ function HeroSection() {
         </div>
         <div className="image-container">
           <img
-            src="/Assets/homeimage1.png"
+            src="./src/assets/homeimage1.png"
             alt="Model wearing jewelry"
             className="hero-image"
           />
@@ -42,12 +42,12 @@ function HeroSection() {
       <section id="collections" className="collections-section">
         <h2>OUR COLLECTIONS</h2>
         <div className="collection">
-          <CollectionCard imageSrc={'./assets/bracelet.jpg'} title={'Traditional'} />
-          <CollectionCard imageSrc={'./assets/bracelet.jpg'} title={'Chains & Pendants'} />
-          <CollectionCard imageSrc={'./assets/bracelet.jpg'} title={'Bangles'} />
-          <CollectionCard imageSrc={'./assets/bracelet.jpg'} title={'Necklaces & Chokes'} />
-          <CollectionCard imageSrc={'./assets/bracelet.jpg'} title={'Earrings & Jhumkas'} />
-          <CollectionCard imageSrc={'./assets/bracelet.jpg'} title={'Rings'} />
+          <CollectionCard imageSrc={'./src/assets/traditional.jpg'} title={'Traditional'} />
+          <CollectionCard imageSrc={'./src/assets/chains.jpg'} title={'Chains & Pendants'} />
+          <CollectionCard imageSrc={'./src/assets/bangles.jpg'} title={'Bangles'} />
+          <CollectionCard imageSrc={'./src/assets/necklace.jpg'} title={'Necklaces & Chokes'} />
+          <CollectionCard imageSrc={'./src/assets/earring.jpg'} title={'Earrings & Jhumkas'} />
+          <CollectionCard imageSrc={'./src/assets/ring.jpg'} title={'Rings'} />
         </div>
       </section>
 
@@ -55,7 +55,7 @@ function HeroSection() {
       <section id="about-us" className="about-us">
         <div className="content-wrapper">
           <div className="image-container">
-            <img src="./Assets/about-us.jpg" alt="About Us" className="circle-image" />
+            <img src="./src/assets/about-us.jpg" alt="About Us" className="circle-image" />
           </div>
           <div className="about-text-container">
             <h1>About Us</h1>
@@ -102,11 +102,11 @@ function HeroSection() {
     {/* Social Media Section */}
     <div className="footer-column">
       <div className="footer-logo">
-        <img src="./Assets/logo.png" alt="OneGold Logo" />
+        <img src="./src/assets/logo.png" alt="OneGold Logo" />
         <div className="social-icons">
-          <SocialMediaIcon imgSrc="./Assets/icons8-facebook.svg" size={35} />
-          <SocialMediaIcon imgSrc="./Assets/icons8-instagram.svg" size={35} />
-          <SocialMediaIcon imgSrc="./Assets/icons8-twitter-32.svg" size={35} />
+          <SocialMediaIcon imgSrc="./src/assets/icons8-facebook.svg" size={35} />
+          <SocialMediaIcon imgSrc="./src/assets/icons8-instagram.svg" size={35} />
+          <SocialMediaIcon imgSrc="./src/assets/icons8-twitter-32.svg" size={35} />
         </div>
       </div>
     </div>
